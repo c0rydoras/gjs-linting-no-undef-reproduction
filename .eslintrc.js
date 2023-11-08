@@ -1,56 +1,29 @@
-'use strict';
-
 module.exports = {
-  root: true,
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    requireConfigFile: false,
-    babelOptions: {
-      plugins: [
-        ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
-      ],
-    },
+  settings: {
+    'import/internal-regex': '^an-app/',
   },
-  plugins: ['ember'],
-  extends: [
-    'eslint:recommended',
-    'plugin:ember/recommended',
-    'plugin:prettier/recommended',
-  ],
-  env: {
-    browser: true,
-  },
-  rules: {},
+  extends: ['@adfinis/eslint-config/ember-app'],
   overrides: [
-    // node files
     {
-      files: [
-        './.eslintrc.js',
-        './.prettierrc.js',
-        './.stylelintrc.js',
-        './.template-lintrc.js',
-        './ember-cli-build.js',
-        './testem.js',
-        './blueprints/*/index.js',
-        './config/**/*.js',
-        './lib/*/index.js',
-        './server/**/*.js',
-      ],
-      parserOptions: {
-        sourceType: 'script',
+      files: ['**/*.{js,ts,gjs,gts}'],
+      rules: {
+        'ember/no-replace-test-comments': 'error',
       },
-      env: {
-        browser: false,
-        node: true,
-      },
-      extends: ['plugin:n/recommended'],
     },
     {
-      // test files
-      files: ['tests/**/*-test.{js,ts}'],
-      extends: ['plugin:qunit/recommended'],
+      files: ['**/*.gjs'],
+      parser: 'eslint-plugin-ember/gjs-gts-parser',
+      plugins: ['ember'],
+      extends: [
+        '@adfinis/eslint-config/ember-app',
+        'plugin:ember/recommended-gjs',
+      ],
+    },
+    {
+      files: ['tests/**/*.{js,ts,gjs,gts}'],
+      rules: {
+        'ember/no-replace-test-comments': 'error',
+      },
     },
   ],
 };
