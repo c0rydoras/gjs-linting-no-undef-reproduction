@@ -25,7 +25,6 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
-    "@adfinis/eslint-config": "^2.0.0",
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-proposal-decorators": "^7.23.2",
@@ -34,6 +33,7 @@
     "@ember/test-helpers": "^3.2.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@typescript-eslint/parser": "^6.10.0",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.2",
     "ember-auto-import": "^2.6.3",
