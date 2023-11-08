@@ -64,7 +64,7 @@
     "ember-welcome-page": "^7.0.2",
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-ember": "ember-cli/eslint-plugin-ember#f71cfd6",
+    "eslint-plugin-ember": "ember-cli/eslint-plugin-ember#master",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.3.0",
     "eslint-plugin-prettier": "^5.0.1",

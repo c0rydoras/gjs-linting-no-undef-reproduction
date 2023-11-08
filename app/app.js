@@ -1,7 +1,8 @@
 import Application from '@ember/application';
-import config from 'an-app/config/environment';
 import loadInitializers from 'ember-load-initializers';
 import Resolver from 'ember-resolver';
+
+import config from 'an-app/config/environment';
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;

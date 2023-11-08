@@ -5304,9 +5304,9 @@ eslint-module-utils@^2.8.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-ember@ember-cli/eslint-plugin-ember#f71cfd6:
-  version "12.0.0-alpha.0"
-  resolved "https://codeload.github.com/ember-cli/eslint-plugin-ember/tar.gz/f71cfd663d4d0ed20fd1aa57f6c1a9c0fa6e4779"
+eslint-plugin-ember@ember-cli/eslint-plugin-ember#master:
+  version "12.0.0-alpha.1"
+  resolved "https://codeload.github.com/ember-cli/eslint-plugin-ember/tar.gz/20e6c3427b09299ab9c5e80f203cb293728ea290"
   dependencies:
     "@babel/eslint-parser" "^7.22.15"
     "@ember-data/rfc395-data" "^0.0.4"
